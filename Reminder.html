@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>sample1</title>
+</head>
+<body>
+    <p>メモ内容</p>
+  <form id="form1" action="#">
+    <input type="text" id="input-message">
+    <input type="button" onclick="showMessage()" value="メモ">
+  </form>
+  <p id="output-message"></p>
+  <script language="javascript" type="text/javascript">
+    const showMessage = () => {
+      const textbox = document.getElementById("input-message");
+      const inputValue = textbox.value;
+
+      const output = "入力された内容は「" + inputValue + "」です。";
+
+      document.getElementById("output-message").innerHTML = output;
+    }
+  </script>
+</body>
+</html>
