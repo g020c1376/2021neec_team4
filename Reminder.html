@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8"/>
   <title>sample1</title>
+  <h1>リマインダー</h1>
 </head>
 <body>
   <form id="form1" action="#">
     <p>日付:<br>
     <input type="text" name="day" id="day">
     <p>メモ内容:<br>
-    <textarea name="text" id="text"></textarea>
+    <textarea name="text" cols="40" rows="8" id="text"></textarea>
     <input type="button" onclick="showMessage()" value="メモ">
   </form>
   <p id="output-message"></p>
