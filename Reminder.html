@@ -5,18 +5,22 @@
   <title>sample1</title>
 </head>
 <body>
-    <p>メモ内容</p>
   <form id="form1" action="#">
-    <input type="text" id="input-message">
+    <p>日付:<br>
+    <input type="text" name="day" id="day">
+    <p>メモ内容:<br>
+    <textarea name="text" id="text"></textarea>
     <input type="button" onclick="showMessage()" value="メモ">
   </form>
   <p id="output-message"></p>
   <script language="javascript" type="text/javascript">
     const showMessage = () => {
-      const textbox = document.getElementById("input-message");
-      const inputValue = textbox.value;
+      const day = document.getElementById("day");
+      const textbox = document.getElementById("text");
+      const inputValue = day.value;
+      const memoBox = textbox.value;
 
-      const output = "入力された内容は「" + inputValue + "」です。";
+      const output = inputValue + "の予定は" + memoBox + "です。";
 
       document.getElementById("output-message").innerHTML = output;
     }
