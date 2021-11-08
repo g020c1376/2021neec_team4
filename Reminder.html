@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8"/>
-  <title>閃光のリマインダー</title>
-  <h1>リマインダー</h1>
+	<meta charset="utf-8"/>
+	<title>閃光のリマインダー</title>
+	<h1>リマインダー</h1>
 </head>
 <body>
-  <form id="form1" action="#">
-    <p>日付:<br>
-    <input type="text" name="day" id="day">
-    <p>メモ内容:<br>
-    <textarea name="text" cols="40" rows="8" id="text"></textarea>
-    <input type="button" onclick="showMessage()" value="メモ">
-  </form>
-  <p id="output-message"></p>
-  <script language="javascript" type="text/javascript">
-    const showMessage = () => {
-      const day = document.getElementById("day");
-      const textbox = document.getElementById("text");
-      const inputValue = day.value;
-      const memoBox = textbox.value;
+	<form id="form1" action="#">
+		<p>日付:<br>
+		<input type="text" name="day" id="day">
+		<p>メモ内容:<br>
+		<textarea name="text" cols="40" rows="8" id="text"></textarea>
+		<input type="button" onclick="showMessage()" value="メモ">
+	</form>
+	<p id="output-message"></p>
+	<script language="javascript" type="text/javascript">
+		const showMessage = () => {
+		const day = document.getElementById("day");
+		const textbox = document.getElementById("text");
+		const inputValue = day.value;
+		const memoBox = textbox.value;
 
-      const output = inputValue + "の予定は" + memoBox + "です。";
+		const output = inputValue + "の予定は" + memoBox + "です。";
 
-      document.getElementById("output-message").innerHTML = output;
-    }
-  </script>
-  <h2>おすすめの曲</h2>
-  <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E9%96%83%E5%85%89/1562144211?i=1562144212"></iframe>
+		document.getElementById("output-message").innerHTML = output;
+		}
+	</script>
+	<h2>おすすめの曲</h2>
+	<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E9%96%83%E5%85%89/1562144211?i=1562144212"></iframe>
 </body>
 </html>
